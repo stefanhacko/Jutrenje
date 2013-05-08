@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface JutarnjiStihoviViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextView *tekst;
+
+-(void)zoom:(UIPinchGestureRecognizer *)rec;
 
 @end
