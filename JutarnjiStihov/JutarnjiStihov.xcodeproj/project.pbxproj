@@ -25,6 +25,7 @@
 		42357DFD173AFA81009F2841 /* JutarnjiStihovTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42357DFC173AFA81009F2841 /* JutarnjiStihovTests.m */; };
 		42B13528173C0D08001138F1 /* TextReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B13527173C0D08001138F1 /* TextReader.m */; };
 		42B1352A173C1247001138F1 /* Januar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B13529173C1247001138F1 /* Januar.txt */; };
+		42B1352C173C1B17001138F1 /* Februar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B1352B173C1B17001138F1 /* Februar.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		42B13526173C0D08001138F1 /* TextReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextReader.h; sourceTree = "<group>"; };
 		42B13527173C0D08001138F1 /* TextReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextReader.m; sourceTree = "<group>"; };
 		42B13529173C1247001138F1 /* Januar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Januar.txt; path = ../Januar.txt; sourceTree = "<group>"; };
+		42B1352B173C1B17001138F1 /* Februar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Februar.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				42B13529173C1247001138F1 /* Januar.txt */,
+				42B1352B173C1B17001138F1 /* Februar.txt */,
 			);
 			name = Tekst;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				42357DE2173AFA81009F2841 /* Default-568h@2x.png in Resources */,
 				42357DE5173AFA81009F2841 /* MainStoryboard.storyboard in Resources */,
 				42B1352A173C1247001138F1 /* Januar.txt in Resources */,
+				42B1352C173C1B17001138F1 /* Februar.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
