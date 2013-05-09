@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextReader.h"
 
 @interface JutarnjiStihoviViewController : UIViewController
 
@@ -20,5 +21,6 @@
 - (IBAction)izaberiDatum:(id)sender;
 - (IBAction)promeniTekst:(id)sender;
 - (void)zoom:(UIPinchGestureRecognizer *)rec;
+
 
 @end

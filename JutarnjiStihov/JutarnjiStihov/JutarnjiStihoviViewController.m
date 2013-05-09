@@ -14,6 +14,7 @@
     float lastSize;
     float minSize;
     float maxSize;
+    
 }
 @end
 
@@ -31,6 +32,10 @@
     lastSize = 22;
     minSize = 22;
     maxSize = 45;
+    
+    _datapicker.date = [NSDate date];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,7 +94,6 @@
     
     
 }
-
 
 -(BOOL)shouldAutorotate
 {
