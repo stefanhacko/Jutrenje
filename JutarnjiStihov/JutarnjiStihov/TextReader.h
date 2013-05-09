@@ -10,6 +10,8 @@
 
 @interface TextReader : NSObject
 
--(TextReader *)initWithMonth:(NSString *)mesec;
--(NSArray *)vratiDan:(int)d;
+- (TextReader *)initWithMonth:(NSString *)mesec;
+- (NSAttributedString *) vratiFormatiranDan:(int)d;
+- (NSAttributedString *)skalirajTekst:(float) scl;
+- (NSArray *)vratiDan:(int)d;
 @end

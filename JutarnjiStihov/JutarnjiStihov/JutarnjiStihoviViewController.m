@@ -14,7 +14,7 @@
     float lastSize;
     float minSize;
     float maxSize;
-    
+    TextReader *probni;
 }
 @end
 
@@ -34,6 +34,11 @@
     maxSize = 45;
     
     _datapicker.date = [NSDate date];
+    
+    probni = [[TextReader alloc] initWithMonth:@"Januar"];
+    NSAttributedString *prob = [probni vratiFormatiranDan:2];
+    
+    [_tekst setAttributedText:prob];
     
     
 }
@@ -57,42 +62,8 @@
 
 -(void)zoom:(UIPinchGestureRecognizer *)rec
 {
-    CGFloat scl = rec.velocity;
-    
-    if (lastSize<minSize)
-    {
-        lastSize=minSize;
-        return;
-    }
-    
-    else if (lastSize >maxSize)
-    {
-        lastSize=maxSize;
-        return;
-    }
-    
-    else
-    {
-        
-        if (lastSize+scl>maxSize) {
-            [_tekst setFont:[UIFont fontWithName:@"Arial" size:maxSize]];
-            
-        }
-        
-        else if (lastSize+scl<minSize)
-        {
-            [_tekst setFont:[UIFont fontWithName:@"Arial" size:minSize]];
-        }
-        
-        else
-        {
-            [_tekst setFont:[UIFont fontWithName:@"Arial" size:lastSize+scl]];
-        }
-        
-        lastSize+=scl;
-    }
-    
-    
+    CGFloat scl = 2*rec.velocity;
+    [_tekst setAttributedText:[probni skalirajTekst:scl]];
 }
 
 -(BOOL)shouldAutorotate

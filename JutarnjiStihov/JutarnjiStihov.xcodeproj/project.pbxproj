@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422A62FE173C3E2900F0F097 /* Mart.txt in Resources */ = {isa = PBXBuildFile; fileRef = 422A62FD173C3E2900F0F097 /* Mart.txt */; };
 		42357DCC173AFA81009F2841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCB173AFA81009F2841 /* UIKit.framework */; };
 		42357DCE173AFA81009F2841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCD173AFA81009F2841 /* Foundation.framework */; };
 		42357DD0173AFA81009F2841 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCF173AFA81009F2841 /* CoreGraphics.framework */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		422A62FD173C3E2900F0F097 /* Mart.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mart.txt; sourceTree = "<group>"; };
 		42357DC8173AFA81009F2841 /* JutarnjiStihov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JutarnjiStihov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42357DCB173AFA81009F2841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42357DCD173AFA81009F2841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -175,6 +177,7 @@
 			children = (
 				42B13529173C1247001138F1 /* Januar.txt */,
 				42B1352B173C1B17001138F1 /* Februar.txt */,
+				422A62FD173C3E2900F0F097 /* Mart.txt */,
 			);
 			name = Tekst;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				42357DE5173AFA81009F2841 /* MainStoryboard.storyboard in Resources */,
 				42B1352A173C1247001138F1 /* Januar.txt in Resources */,
 				42B1352C173C1B17001138F1 /* Februar.txt in Resources */,
+				422A62FE173C3E2900F0F097 /* Mart.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
