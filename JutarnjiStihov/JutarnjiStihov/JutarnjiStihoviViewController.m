@@ -10,6 +10,7 @@
 
 @interface JutarnjiStihoviViewController ()
 {
+    @private
     float lastSize;
     float minSize;
     float maxSize;
@@ -26,6 +27,7 @@
     UIPinchGestureRecognizer *recognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(zoom:)];
     
     [self.view addGestureRecognizer:recognizer];
+    
     lastSize = 22;
     minSize = 22;
     maxSize = 45;
@@ -35,6 +37,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)promeniTekst:(id)sender
+{
+    _dugmePromena.enabled = NO;
+    _datapicker.hidden=YES;
+}
+- (IBAction)izaberiDatum:(id)sender
+{
+    _datapicker.hidden = NO;
+    _dugmePromena.enabled = YES;
 }
 
 -(void)zoom:(UIPinchGestureRecognizer *)rec
@@ -76,6 +89,8 @@
     
     
 }
+
+
 -(BOOL)shouldAutorotate
 {
     return YES;
