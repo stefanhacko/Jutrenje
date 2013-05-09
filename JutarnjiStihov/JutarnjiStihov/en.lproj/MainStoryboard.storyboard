@@ -28,20 +28,60 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-5J-YPF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="aoc-Rr-WUP"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="389825792.94224799">
+                                    <!--2013-05-09 20:56:32 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="378727200">
+                                    <!--2013-01-01 10:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="410180400">
+                                    <!--2013-12-31 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="sr-Latn"/>
+                                <timeZone key="timeZone" name="America/Los_Angeles">
+                                    <mutableData key="data">
+VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
+y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
+5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
+8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
+AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
+DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
+HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
+KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
+OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
+Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
+VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
+Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
+cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
+f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
+</mutableData>
+                                </timeZone>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="sDu-q9-UUf" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="3xW-Lb-tTU"/>
+                            <constraint firstItem="JI2-5J-YPF" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="EBA-YM-ia2"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="N8w-OD-Fqw"/>
+                            <constraint firstItem="JI2-5J-YPF" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Q1J-QI-lnT"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="top" secondItem="sDu-q9-UUf" secondAttribute="bottom" type="default" id="Zgl-eC-z7e"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="aqR-wz-WNZ"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="jlb-Kh-TCZ"/>
+                            <constraint firstItem="JI2-5J-YPF" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="kQD-2z-Enp"/>
                             <constraint firstItem="sDu-q9-UUf" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="uqT-xu-Kbx"/>
                             <constraint firstItem="sDu-q9-UUf" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="yYz-YD-wz2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datapicker" destination="JI2-5J-YPF" id="eI2-WV-cwa"/>
                         <outlet property="datum" destination="o37-Mt-wgf" id="Wm7-li-H2N"/>
                         <outlet property="navBar" destination="sDu-q9-UUf" id="YkN-2C-u98"/>
                         <outlet property="tekst" destination="MRh-9M-8zT" id="jDx-3J-Bq7"/>
@@ -52,6 +92,23 @@
             <point key="canvasLocation" x="40" y="-275"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="JutarnjiStihoviViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JutarnjiStihoviViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="izaberiDatum:"/>
+                <relationship kind="action" name="promeniTekst:"/>
+                <relationship kind="outlet" name="datapicker" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="datum" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="dugmePromena" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+                <relationship kind="outlet" name="tekst" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
