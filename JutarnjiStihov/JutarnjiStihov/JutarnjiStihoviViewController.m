@@ -14,7 +14,7 @@
     float lastSize;
     float minSize;
     float maxSize;
-    TextReader *probni;
+    TextReader *readerTeksta;
 }
 @end
 
@@ -33,12 +33,24 @@
     minSize = 22;
     maxSize = 45;
     
-    _datapicker.date = [NSDate date];
+    NSDate *danasnjiDatum = [NSDate date];
     
-    probni = [[TextReader alloc] initWithMonth:@"Januar"];
-    NSAttributedString *prob = [probni vratiFormatiranDan:2];
     
-    [_tekst setAttributedText:prob];
+    _datapicker.date = danasnjiDatum;
+    
+    NSDateFormatter *mesec = [[NSDateFormatter alloc] init];
+    [mesec setDateFormat:@"MM"];
+    int mesecBroj = [[mesec stringFromDate:danasnjiDatum] intValue];
+    
+    NSDateFormatter *dan = [[NSDateFormatter alloc] init];
+    [dan setDateFormat:@"dd"];
+    int danBroj = [[dan stringFromDate:danasnjiDatum] intValue];
+    
+    readerTeksta = [[TextReader alloc] initWithMonth:mesecBroj];
+    
+    NSAttributedString *pocetniTekst = [readerTeksta vratiFormatiranDan: danBroj];
+    
+    [_tekst setAttributedText:pocetniTekst];
     
     
 }
@@ -63,7 +75,7 @@
 -(void)zoom:(UIPinchGestureRecognizer *)rec
 {
     CGFloat scl = 2*rec.velocity;
-    [_tekst setAttributedText:[probni skalirajTekst:scl]];
+    [_tekst setAttributedText:[readerTeksta skalirajTekst:scl]];
 }
 
 -(BOOL)shouldAutorotate

@@ -10,9 +10,12 @@
 @interface TextReader()
 {
     @private
+    NSUInteger mesec;
     NSString *ulazniFajl;
     NSArray *listaDana;
+    NSArray *listaMeseci;
     NSMutableAttributedString *trenutniTekst;
+    
     int minNaslov;
     int maxNaslov;
     int minStih;
@@ -30,10 +33,17 @@
    
 }
 -(void)setujParametre;
+-(void)napraviMesece;
 
 @end
 
 @implementation TextReader
+
+-(void)napraviMesece
+{
+    listaMeseci = [NSArray arrayWithObjects:@"Januar",@"Februar",@"Mart",@"April",@"Maj",
+                   @"Jun",@"Jul",@"Avgust",@"Septembar",@"Oktobar",@"Novembar",@"Decembar", nil];
+}
 
 -(void)setujParametre
 {
@@ -49,11 +59,12 @@
     lastStih = minStih;
 }
 
--(TextReader *)initWithMonth:(NSString *)mesec
+-(TextReader *)initWithMonth:(int)m
 {
     self = [super init];
+    [self napraviMesece];
     
-    NSString *putanja = [[NSBundle mainBundle] pathForResource:mesec ofType:@"txt"];
+    NSString *putanja = [[NSBundle mainBundle] pathForResource:[listaMeseci objectAtIndex: m-1] ofType:@"txt"];
     
     ulazniFajl = [NSString stringWithContentsOfFile:putanja encoding:NSUTF8StringEncoding error:nil];
     
@@ -62,6 +73,23 @@
     [self setujParametre];
     
     return self;
+}
+
+- (TextReader *)init
+{
+    self = [super init];
+    [self setujParametre];
+    
+    return self;
+}
+
+- (void)promeniMesec:(int)m
+{
+    NSString *putanja = [[NSBundle mainBundle] pathForResource:[listaMeseci objectAtIndex: m-1] ofType:@"txt"];
+    
+    ulazniFajl = [NSString stringWithContentsOfFile:putanja encoding:NSUTF8StringEncoding error:nil];
+    
+    listaDana = [ulazniFajl componentsSeparatedByString:@"**********"];
 }
 
 -(NSArray *)vratiDan:(int)d
@@ -78,9 +106,9 @@
     
     trenutniTekst = [[NSMutableAttributedString alloc] initWithString:[[neFormatiranTekst objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 3)]] componentsJoinedByString:@"\n\n"]];
     
-    NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:20.0]};
-    NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:18.0]};
-    NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:16.0]};
+    NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov]};
+    NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih]};
+    NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst]};
     
     trenutnaDuzinaNaslova = [[neFormatiranTekst objectAtIndex:1] length];
     trenutnaDuzinaStiha = [[neFormatiranTekst objectAtIndex:2] length];
