@@ -25,6 +25,7 @@
 		42357DFA173AFA81009F2841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42357DF8173AFA81009F2841 /* InfoPlist.strings */; };
 		42357DFD173AFA81009F2841 /* JutarnjiStihovTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42357DFC173AFA81009F2841 /* JutarnjiStihovTests.m */; };
 		42993ACA173CF0260003AB5B /* Maj.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42993AC9173CF0260003AB5B /* Maj.txt */; };
+		42ADEA7E173D671200075263 /* April.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42ADEA7D173D671200075263 /* April.txt */; };
 		42B13528173C0D08001138F1 /* TextReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B13527173C0D08001138F1 /* TextReader.m */; };
 		42B1352A173C1247001138F1 /* Januar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B13529173C1247001138F1 /* Januar.txt */; };
 		42B1352C173C1B17001138F1 /* Februar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B1352B173C1B17001138F1 /* Februar.txt */; };
@@ -65,6 +66,7 @@
 		42357DFB173AFA81009F2841 /* JutarnjiStihovTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JutarnjiStihovTests.h; sourceTree = "<group>"; };
 		42357DFC173AFA81009F2841 /* JutarnjiStihovTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JutarnjiStihovTests.m; sourceTree = "<group>"; };
 		42993AC9173CF0260003AB5B /* Maj.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maj.txt; sourceTree = "<group>"; };
+		42ADEA7D173D671200075263 /* April.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = April.txt; sourceTree = "<group>"; };
 		42B13526173C0D08001138F1 /* TextReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextReader.h; sourceTree = "<group>"; };
 		42B13527173C0D08001138F1 /* TextReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextReader.m; sourceTree = "<group>"; };
 		42B13529173C1247001138F1 /* Januar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Januar.txt; path = ../Januar.txt; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			children = (
 				42B13529173C1247001138F1 /* Januar.txt */,
 				42B1352B173C1B17001138F1 /* Februar.txt */,
+				42ADEA7D173D671200075263 /* April.txt */,
 				422A62FD173C3E2900F0F097 /* Mart.txt */,
 				42993AC9173CF0260003AB5B /* Maj.txt */,
 			);
@@ -266,6 +269,7 @@
 				42B1352C173C1B17001138F1 /* Februar.txt in Resources */,
 				422A62FE173C3E2900F0F097 /* Mart.txt in Resources */,
 				42993ACA173CF0260003AB5B /* Maj.txt in Resources */,
+				42ADEA7E173D671200075263 /* April.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
