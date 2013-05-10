@@ -20,7 +20,9 @@
 
 - (IBAction)izaberiDatum:(id)sender;
 - (IBAction)promeniTekst:(id)sender;
-- (void)zoom:(UIPinchGestureRecognizer *)rec;
+- (IBAction)skloniKalendar:(id)sender;
 
+- (void)zoom:(UIPinchGestureRecognizer *)rec;
+- (void)pormeniNaDatum:(NSDate *)dat;
 
 @end

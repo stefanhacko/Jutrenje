@@ -18,6 +18,9 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDu-q9-UUf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="GPa-ka-PiX"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Test" id="pef-jt-vAU">
                                         <barButtonItem key="rightBarButtonItem" title="Datum" id="o37-Mt-wgf">
@@ -30,7 +33,7 @@
                             </navigationBar>
                             <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-5J-YPF">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="aoc-Rr-WUP"/>
+                                    <constraint firstAttribute="height" constant="180" type="user" id="2E1-H8-SSr"/>
                                 </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="389825792.94224799">
                                     <!--2013-05-09 20:56:32 +0000-->
@@ -43,7 +46,7 @@
                                 </date>
                                 <locale key="locale" localeIdentifier="sr-Latn"/>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <mutableData key="data">
+                                    <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -61,35 +64,61 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                 </timeZone>
+                                <connections>
+                                    <action selector="promeniTekst:" destination="2" eventType="valueChanged" id="VFa-65-ogU"/>
+                                </connections>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0y-3H-ZUW">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" type="user" id="02a-VN-POW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="skloniKalendar:" destination="2" eventType="touchUpInside" id="kK1-HV-c5s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="JI2-5J-YPF" firstAttribute="top" secondItem="H0y-3H-ZUW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1Ri-P5-Gda"/>
                             <constraint firstItem="sDu-q9-UUf" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="3xW-Lb-tTU"/>
-                            <constraint firstItem="JI2-5J-YPF" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="EBA-YM-ia2"/>
+                            <constraint firstItem="JI2-5J-YPF" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="CRD-hH-6qH"/>
+                            <constraint firstItem="H0y-3H-ZUW" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="user" id="CiY-Uf-DOx"/>
+                            <constraint firstItem="MRh-9M-8zT" firstAttribute="top" secondItem="sDu-q9-UUf" secondAttribute="bottom" type="default" id="Icl-t5-oUp"/>
+                            <constraint firstItem="H0y-3H-ZUW" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="user" id="LAu-JY-SWQ"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="N8w-OD-Fqw"/>
                             <constraint firstItem="JI2-5J-YPF" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Q1J-QI-lnT"/>
-                            <constraint firstItem="MRh-9M-8zT" firstAttribute="top" secondItem="sDu-q9-UUf" secondAttribute="bottom" type="default" id="Zgl-eC-z7e"/>
+                            <constraint firstItem="sDu-q9-UUf" firstAttribute="width" secondItem="H0y-3H-ZUW" secondAttribute="width" type="user" id="adP-af-0XV"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="aqR-wz-WNZ"/>
+                            <constraint firstItem="H0y-3H-ZUW" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="user" id="ja8-fW-3g0"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="jlb-Kh-TCZ"/>
-                            <constraint firstItem="JI2-5J-YPF" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="kQD-2z-Enp"/>
-                            <constraint firstItem="sDu-q9-UUf" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="uqT-xu-Kbx"/>
-                            <constraint firstItem="sDu-q9-UUf" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="yYz-YD-wz2"/>
+                            <constraint firstItem="JI2-5J-YPF" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="lvy-wD-cII"/>
+                            <constraint firstItem="MRh-9M-8zT" firstAttribute="top" secondItem="H0y-3H-ZUW" secondAttribute="top" type="default" id="lyK-dq-9MW"/>
+                            <constraint firstItem="H0y-3H-ZUW" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="user" id="mRh-dJ-AQJ"/>
+                            <constraint firstItem="sDu-q9-UUf" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="yYz-YD-wz2"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="datapicker" destination="JI2-5J-YPF" id="eI2-WV-cwa"/>
                         <outlet property="datum" destination="o37-Mt-wgf" id="Wm7-li-H2N"/>
+                        <outlet property="dugmePromena" destination="H0y-3H-ZUW" id="fys-Pn-GtJ"/>
                         <outlet property="navBar" destination="sDu-q9-UUf" id="YkN-2C-u98"/>
                         <outlet property="tekst" destination="MRh-9M-8zT" id="jDx-3J-Bq7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="-275"/>
+            <point key="canvasLocation" x="-1149" y="-352"/>
         </scene>
     </scenes>
     <classes>
@@ -98,6 +127,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <relationships>
                 <relationship kind="action" name="izaberiDatum:"/>
                 <relationship kind="action" name="promeniTekst:"/>
+                <relationship kind="action" name="skloniKalendar:"/>
                 <relationship kind="outlet" name="datapicker" candidateClass="UIDatePicker"/>
                 <relationship kind="outlet" name="datum" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="dugmePromena" candidateClass="UIButton"/>

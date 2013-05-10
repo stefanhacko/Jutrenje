@@ -30,10 +30,14 @@
     int trenutnaDuzinaNaslova;
     int trenutnaDuzinaStiha;
     int trenutnaDuzinaTeksta;
+    
+    int trenutanMesec;
+    int trenutanDan;
    
 }
 -(void)setujParametre;
 -(void)napraviMesece;
+-(void)postaviTrenutanDan:(int)d;
 
 @end
 
@@ -58,11 +62,39 @@
     lastTekst = minTekst;
     lastStih = minStih;
 }
+-(void) postaviTrenutanDan:(int)d
+{
+    NSArray *neFormatiranTekst = [self vratiDan:d];
+    
+    trenutniTekst = [[NSMutableAttributedString alloc] initWithString:[[neFormatiranTekst objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 3)]] componentsJoinedByString:@"\n\n"]];
+    
+    NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov]};
+    NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih]};
+    NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst]};
+    
+    trenutnaDuzinaNaslova = [[neFormatiranTekst objectAtIndex:1] length];
+    trenutnaDuzinaStiha = [[neFormatiranTekst objectAtIndex:2] length];
+    trenutnaDuzinaTeksta = [[neFormatiranTekst objectAtIndex: 3] length];
+    
+    [trenutniTekst setAttributes:formtNaslova range:NSMakeRange(0, trenutnaDuzinaNaslova)];
+    [trenutniTekst setAttributes:formatStiha range:NSMakeRange(trenutnaDuzinaNaslova+2, trenutnaDuzinaStiha)];
+    [trenutniTekst setAttributes:formatTeksta range:NSMakeRange(trenutnaDuzinaNaslova+trenutnaDuzinaStiha+4, trenutnaDuzinaTeksta)];
+}
+
+-(void)promeniDan:(int)d
+{
+    if (trenutanDan != d) {
+        [self postaviTrenutanDan:d];
+        trenutanDan = d;
+    }
+}
 
 -(TextReader *)initWithMonth:(int)m
 {
     self = [super init];
     [self napraviMesece];
+    
+    trenutanMesec = m;
     
     NSString *putanja = [[NSBundle mainBundle] pathForResource:[listaMeseci objectAtIndex: m-1] ofType:@"txt"];
     
@@ -85,11 +117,16 @@
 
 - (void)promeniMesec:(int)m
 {
-    NSString *putanja = [[NSBundle mainBundle] pathForResource:[listaMeseci objectAtIndex: m-1] ofType:@"txt"];
-    
-    ulazniFajl = [NSString stringWithContentsOfFile:putanja encoding:NSUTF8StringEncoding error:nil];
-    
-    listaDana = [ulazniFajl componentsSeparatedByString:@"**********"];
+    if (trenutanMesec!=m) {
+        NSString *putanja = [[NSBundle mainBundle] pathForResource:[listaMeseci objectAtIndex: m-1] ofType:@"txt"];
+        
+        ulazniFajl = [NSString stringWithContentsOfFile:putanja encoding:NSUTF8StringEncoding error:nil];
+        
+        listaDana = [ulazniFajl componentsSeparatedByString:@"**********"];
+        
+        trenutanMesec = m;
+    }
+
 }
 
 -(NSArray *)vratiDan:(int)d
@@ -99,27 +136,24 @@
     
     return rastavljenDan;
 }
+- (NSAttributedString *)trenutanTekst
+{
+    return trenutniTekst;
+}
 
 - (NSAttributedString *)vratiFormatiranDan:(int)d
 {
-    NSArray *neFormatiranTekst = [self vratiDan:d];
+    if (trenutanDan !=d)
+    {
+        [self postaviTrenutanDan:d];
+        trenutanDan = d;
+        return trenutniTekst;
+    }
+    else
+    {
+        return trenutniTekst;
+    }
     
-    trenutniTekst = [[NSMutableAttributedString alloc] initWithString:[[neFormatiranTekst objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 3)]] componentsJoinedByString:@"\n\n"]];
-    
-    NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov]};
-    NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih]};
-    NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst]};
-    
-    trenutnaDuzinaNaslova = [[neFormatiranTekst objectAtIndex:1] length];
-    trenutnaDuzinaStiha = [[neFormatiranTekst objectAtIndex:2] length];
-    trenutnaDuzinaTeksta = [[neFormatiranTekst objectAtIndex: 3] length];
-    
-    [trenutniTekst setAttributes:formtNaslova range:NSMakeRange(0, trenutnaDuzinaNaslova)];
-    [trenutniTekst setAttributes:formatStiha range:NSMakeRange(trenutnaDuzinaNaslova+2, trenutnaDuzinaStiha)];
-    [trenutniTekst setAttributes:formatTeksta range:NSMakeRange(trenutnaDuzinaNaslova+trenutnaDuzinaStiha+4, trenutnaDuzinaTeksta)];
-    
-    
-    return trenutniTekst;
     
 }
 
