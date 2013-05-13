@@ -83,10 +83,7 @@
 
 -(void)promeniDan:(int)d
 {
-    if (trenutanDan != d) {
-        [self postaviTrenutanDan:d];
-        trenutanDan = d;
-    }
+    [self postaviTrenutanDan:d];
 }
 
 -(TextReader *)initWithMonth:(int)m
@@ -143,18 +140,8 @@
 
 - (NSAttributedString *)vratiFormatiranDan:(int)d
 {
-    if (trenutanDan !=d)
-    {
-        [self postaviTrenutanDan:d];
-        trenutanDan = d;
-        return trenutniTekst;
-    }
-    else
-    {
-        return trenutniTekst;
-    }
-    
-    
+    [self postaviTrenutanDan:d];
+    return trenutniTekst;
 }
 
 - (NSAttributedString *)skalirajTekst:(float) scl

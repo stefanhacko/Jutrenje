@@ -14,6 +14,7 @@
     float lastSize;
     float minSize;
     float maxSize;
+    NSArray *listaMeseci;
     TextReader *readerTeksta;
 }
 @end
@@ -24,6 +25,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    listaMeseci = [NSArray arrayWithObjects:@"Januar",@"Februar",@"Mart",@"April",@"Maj",
+                   @"Jun",@"Jul",@"Avgust",@"Septembar",@"Oktobar",@"Novembar",@"Decembar", nil];
     
     UIPinchGestureRecognizer *recognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(zoom:)];
     
@@ -53,6 +56,9 @@
     
     [_tekst setAttributedText:pocetniTekst];
     
+     NSString *naslov = [NSString stringWithFormat:@"%d. %@",danBroj,[listaMeseci objectAtIndex:mesecBroj-1]];
+    [[_navBar.items objectAtIndex:0] setTitle:naslov];
+    
     
 }
 
@@ -81,8 +87,18 @@
     NSDate *datumZaMenjanje = [sender date];
     [self pormeniNaDatum:datumZaMenjanje];
     
-    _tekst.attributedText = [readerTeksta trenutanTekst];
+    NSDateFormatter *mesec = [[NSDateFormatter alloc] init];
+    [mesec setDateFormat:@"MM"];
+    int mesecBroj = [[mesec stringFromDate:datumZaMenjanje] intValue];
     
+    NSDateFormatter *dan = [[NSDateFormatter alloc] init];
+    [dan setDateFormat:@"dd"];
+    int danBroj = [[dan stringFromDate:datumZaMenjanje] intValue];
+    
+    _tekst.attributedText = [readerTeksta trenutanTekst];
+    NSString *naslov = [NSString stringWithFormat:@"%d. %@",danBroj,[listaMeseci objectAtIndex:mesecBroj-1]];
+    
+    [[_navBar.items objectAtIndex:0] setTitle:naslov];
 }
 
 - (IBAction)skloniKalendar:(id)sender {

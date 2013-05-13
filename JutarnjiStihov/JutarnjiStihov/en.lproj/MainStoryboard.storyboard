@@ -19,7 +19,7 @@
                             </textView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDu-q9-UUf">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="GPa-ka-PiX"/>
+                                    <constraint firstAttribute="height" constant="50" type="user" id="GPa-ka-PiX"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Test" id="pef-jt-vAU">
@@ -92,9 +92,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <constraints>
                             <constraint firstItem="JI2-5J-YPF" firstAttribute="top" secondItem="H0y-3H-ZUW" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1Ri-P5-Gda"/>
                             <constraint firstItem="sDu-q9-UUf" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="3xW-Lb-tTU"/>
+                            <constraint firstItem="MRh-9M-8zT" firstAttribute="top" secondItem="sDu-q9-UUf" secondAttribute="bottom" type="default" id="6Id-xZ-Z1f"/>
+                            <constraint firstItem="MRh-9M-8zT" firstAttribute="top" secondItem="H0y-3H-ZUW" secondAttribute="top" type="default" id="A7b-Ef-gNE"/>
                             <constraint firstItem="JI2-5J-YPF" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="CRD-hH-6qH"/>
                             <constraint firstItem="H0y-3H-ZUW" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="user" id="CiY-Uf-DOx"/>
-                            <constraint firstItem="MRh-9M-8zT" firstAttribute="top" secondItem="sDu-q9-UUf" secondAttribute="bottom" type="default" id="Icl-t5-oUp"/>
                             <constraint firstItem="H0y-3H-ZUW" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="user" id="LAu-JY-SWQ"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="N8w-OD-Fqw"/>
                             <constraint firstItem="JI2-5J-YPF" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Q1J-QI-lnT"/>
@@ -103,7 +104,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <constraint firstItem="H0y-3H-ZUW" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="user" id="ja8-fW-3g0"/>
                             <constraint firstItem="MRh-9M-8zT" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="jlb-Kh-TCZ"/>
                             <constraint firstItem="JI2-5J-YPF" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="lvy-wD-cII"/>
-                            <constraint firstItem="MRh-9M-8zT" firstAttribute="top" secondItem="H0y-3H-ZUW" secondAttribute="top" type="default" id="lyK-dq-9MW"/>
                             <constraint firstItem="H0y-3H-ZUW" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="user" id="mRh-dJ-AQJ"/>
                             <constraint firstItem="sDu-q9-UUf" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="yYz-YD-wz2"/>
                         </constraints>
