@@ -68,9 +68,19 @@
     
     trenutniTekst = [[NSMutableAttributedString alloc] initWithString:[[neFormatiranTekst objectsAtIndexes:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(1, 3)]] componentsJoinedByString:@"\n\n"]];
     
-    NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov]};
-    NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih]};
-    NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst]};
+    NSMutableParagraphStyle *stilParagrafa = [[NSMutableParagraphStyle alloc] init];
+    [stilParagrafa setAlignment:NSTextAlignmentCenter];
+    
+    NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov],
+                                   NSParagraphStyleAttributeName: stilParagrafa};
+    
+    NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih],
+                                  NSParagraphStyleAttributeName: stilParagrafa};
+    
+    NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst],
+                                   NSParagraphStyleAttributeName: stilParagrafa};
+    
+    
     
     trenutnaDuzinaNaslova = [[neFormatiranTekst objectAtIndex:1] length];
     trenutnaDuzinaStiha = [[neFormatiranTekst objectAtIndex:2] length];
@@ -166,9 +176,17 @@
      
         if(lastNaslov+scl > maxNaslov)
         {
-            NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:maxNaslov]};
-            NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:maxStih]};
-            NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:maxTekst]};
+            NSMutableParagraphStyle *stilParagrafa = [[NSMutableParagraphStyle alloc] init];
+            [stilParagrafa setAlignment:NSTextAlignmentCenter];
+            
+            NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov],
+                                           NSParagraphStyleAttributeName: stilParagrafa};
+            
+            NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih],
+                                          NSParagraphStyleAttributeName: stilParagrafa};
+            
+            NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst],
+                                           NSParagraphStyleAttributeName: stilParagrafa};
             
             [trenutniTekst setAttributes:formtNaslova range:NSMakeRange(0, trenutnaDuzinaNaslova)];
             [trenutniTekst setAttributes:formatStiha range:NSMakeRange(trenutnaDuzinaNaslova+2, trenutnaDuzinaStiha)];
@@ -182,9 +200,17 @@
         }
         else if (lastNaslov+scl<minNaslov)
         {
-            NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:minNaslov]};
-            NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:minStih]};
-            NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:minTekst]};
+            NSMutableParagraphStyle *stilParagrafa = [[NSMutableParagraphStyle alloc] init];
+            [stilParagrafa setAlignment:NSTextAlignmentCenter];
+            
+            NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov],
+                                           NSParagraphStyleAttributeName: stilParagrafa};
+            
+            NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih],
+                                          NSParagraphStyleAttributeName: stilParagrafa};
+            
+            NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst],
+                                           NSParagraphStyleAttributeName: stilParagrafa};;
             
             [trenutniTekst setAttributes:formtNaslova range:NSMakeRange(0, trenutnaDuzinaNaslova)];
             [trenutniTekst setAttributes:formatStiha range:NSMakeRange(trenutnaDuzinaNaslova+2, trenutnaDuzinaStiha)];
@@ -198,9 +224,17 @@
         }
         else
         {
-            NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov+scl]};
-            NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih +scl]};
-            NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst +scl]};
+            NSMutableParagraphStyle *stilParagrafa = [[NSMutableParagraphStyle alloc] init];
+            [stilParagrafa setAlignment:NSTextAlignmentCenter];
+            
+            NSDictionary *formtNaslova = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Bold" size:lastNaslov],
+                                           NSParagraphStyleAttributeName: stilParagrafa};
+            
+            NSDictionary *formatStiha = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica-Oblique" size:lastStih],
+                                          NSParagraphStyleAttributeName: stilParagrafa};
+            
+            NSDictionary *formatTeksta = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:lastTekst],
+                                           NSParagraphStyleAttributeName: stilParagrafa};
             
             [trenutniTekst setAttributes:formtNaslova range:NSMakeRange(0, trenutnaDuzinaNaslova)];
             [trenutniTekst setAttributes:formatStiha range:NSMakeRange(trenutnaDuzinaNaslova+2, trenutnaDuzinaStiha)];

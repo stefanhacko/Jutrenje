@@ -107,8 +107,17 @@
 }
 - (IBAction)izaberiDatum:(id)sender
 {
-    _datapicker.hidden = NO;
-    _dugmePromena.hidden = NO;
+
+    if (_datapicker.hidden == NO)
+    {
+        _datapicker.hidden = YES;
+        _dugmePromena.hidden = YES;
+    }
+    else
+    {
+        _datapicker.hidden = NO;
+        _dugmePromena.hidden = NO;
+    }
 }
 
 -(void)zoom:(UIPinchGestureRecognizer *)rec
