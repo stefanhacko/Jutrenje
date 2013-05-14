@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4215E1A31742E8060047C2EF /* Jun.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4215E1A21742E8060047C2EF /* Jun.txt */; };
 		422A62FE173C3E2900F0F097 /* Mart.txt in Resources */ = {isa = PBXBuildFile; fileRef = 422A62FD173C3E2900F0F097 /* Mart.txt */; };
 		42357DCC173AFA81009F2841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCB173AFA81009F2841 /* UIKit.framework */; };
 		42357DCE173AFA81009F2841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCD173AFA81009F2841 /* Foundation.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4215E1A21742E8060047C2EF /* Jun.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jun.txt; sourceTree = "<group>"; };
 		422A62FD173C3E2900F0F097 /* Mart.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mart.txt; sourceTree = "<group>"; };
 		42357DC8173AFA81009F2841 /* JutarnjiStihov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JutarnjiStihov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42357DCB173AFA81009F2841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -184,6 +186,7 @@
 				42ADEA7D173D671200075263 /* April.txt */,
 				422A62FD173C3E2900F0F097 /* Mart.txt */,
 				42993AC9173CF0260003AB5B /* Maj.txt */,
+				4215E1A21742E8060047C2EF /* Jun.txt */,
 			);
 			name = Tekst;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				422A62FE173C3E2900F0F097 /* Mart.txt in Resources */,
 				42993ACA173CF0260003AB5B /* Maj.txt in Resources */,
 				42ADEA7E173D671200075263 /* April.txt in Resources */,
+				4215E1A31742E8060047C2EF /* Jun.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
