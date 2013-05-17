@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4215E1A31742E8060047C2EF /* Jun.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4215E1A21742E8060047C2EF /* Jun.txt */; };
+		422A62FE173C3E2900F0F097 /* Mart.txt in Resources */ = {isa = PBXBuildFile; fileRef = 422A62FD173C3E2900F0F097 /* Mart.txt */; };
 		42357DCC173AFA81009F2841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCB173AFA81009F2841 /* UIKit.framework */; };
 		42357DCE173AFA81009F2841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCD173AFA81009F2841 /* Foundation.framework */; };
 		42357DD0173AFA81009F2841 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCF173AFA81009F2841 /* CoreGraphics.framework */; };
@@ -23,6 +25,11 @@
 		42357DF2173AFA81009F2841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCD173AFA81009F2841 /* Foundation.framework */; };
 		42357DFA173AFA81009F2841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42357DF8173AFA81009F2841 /* InfoPlist.strings */; };
 		42357DFD173AFA81009F2841 /* JutarnjiStihovTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42357DFC173AFA81009F2841 /* JutarnjiStihovTests.m */; };
+		42993ACA173CF0260003AB5B /* Maj.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42993AC9173CF0260003AB5B /* Maj.txt */; };
+		42ADEA7E173D671200075263 /* April.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42ADEA7D173D671200075263 /* April.txt */; };
+		42B13528173C0D08001138F1 /* TextReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B13527173C0D08001138F1 /* TextReader.m */; };
+		42B1352A173C1247001138F1 /* Januar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B13529173C1247001138F1 /* Januar.txt */; };
+		42B1352C173C1B17001138F1 /* Februar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B1352B173C1B17001138F1 /* Februar.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4215E1A21742E8060047C2EF /* Jun.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jun.txt; sourceTree = "<group>"; };
+		422A62FD173C3E2900F0F097 /* Mart.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mart.txt; sourceTree = "<group>"; };
 		42357DC8173AFA81009F2841 /* JutarnjiStihov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JutarnjiStihov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42357DCB173AFA81009F2841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		42357DCD173AFA81009F2841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +67,12 @@
 		42357DF9173AFA81009F2841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42357DFB173AFA81009F2841 /* JutarnjiStihovTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JutarnjiStihovTests.h; sourceTree = "<group>"; };
 		42357DFC173AFA81009F2841 /* JutarnjiStihovTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JutarnjiStihovTests.m; sourceTree = "<group>"; };
+		42993AC9173CF0260003AB5B /* Maj.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maj.txt; sourceTree = "<group>"; };
+		42ADEA7D173D671200075263 /* April.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = April.txt; sourceTree = "<group>"; };
+		42B13526173C0D08001138F1 /* TextReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextReader.h; sourceTree = "<group>"; };
+		42B13527173C0D08001138F1 /* TextReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextReader.m; sourceTree = "<group>"; };
+		42B13529173C1247001138F1 /* Januar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Januar.txt; path = ../Januar.txt; sourceTree = "<group>"; };
+		42B1352B173C1B17001138F1 /* Februar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Februar.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +132,8 @@
 		42357DD1173AFA81009F2841 /* JutarnjiStihov */ = {
 			isa = PBXGroup;
 			children = (
+				42B13526173C0D08001138F1 /* TextReader.h */,
+				42B13527173C0D08001138F1 /* TextReader.m */,
 				42357DDA173AFA81009F2841 /* JutarnjiStihoviAppDelegate.h */,
 				42357DDB173AFA81009F2841 /* JutarnjiStihoviAppDelegate.m */,
 				42357DE3173AFA81009F2841 /* MainStoryboard.storyboard */,
@@ -130,6 +147,7 @@
 		42357DD2173AFA81009F2841 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42B13523173C0CB8001138F1 /* Tekst */,
 				42357DD3173AFA81009F2841 /* JutarnjiStihov-Info.plist */,
 				42357DD4173AFA81009F2841 /* InfoPlist.strings */,
 				42357DD7173AFA81009F2841 /* main.m */,
@@ -158,6 +176,19 @@
 				42357DF8173AFA81009F2841 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42B13523173C0CB8001138F1 /* Tekst */ = {
+			isa = PBXGroup;
+			children = (
+				42B13529173C1247001138F1 /* Januar.txt */,
+				42B1352B173C1B17001138F1 /* Februar.txt */,
+				42ADEA7D173D671200075263 /* April.txt */,
+				422A62FD173C3E2900F0F097 /* Mart.txt */,
+				42993AC9173CF0260003AB5B /* Maj.txt */,
+				4215E1A21742E8060047C2EF /* Jun.txt */,
+			);
+			name = Tekst;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +268,12 @@
 				42357DE0173AFA81009F2841 /* Default@2x.png in Resources */,
 				42357DE2173AFA81009F2841 /* Default-568h@2x.png in Resources */,
 				42357DE5173AFA81009F2841 /* MainStoryboard.storyboard in Resources */,
+				42B1352A173C1247001138F1 /* Januar.txt in Resources */,
+				42B1352C173C1B17001138F1 /* Februar.txt in Resources */,
+				422A62FE173C3E2900F0F097 /* Mart.txt in Resources */,
+				42993ACA173CF0260003AB5B /* Maj.txt in Resources */,
+				42ADEA7E173D671200075263 /* April.txt in Resources */,
+				4215E1A31742E8060047C2EF /* Jun.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +311,7 @@
 				42357DD8173AFA81009F2841 /* main.m in Sources */,
 				42357DDC173AFA81009F2841 /* JutarnjiStihoviAppDelegate.m in Sources */,
 				42357DE8173AFA81009F2841 /* JutarnjiStihoviViewController.m in Sources */,
+				42B13528173C0D08001138F1 /* TextReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,10 +420,12 @@
 		42357E01173AFA81009F2841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JutarnjiStihov/JutarnjiStihov-Prefix.pch";
 				INFOPLIST_FILE = "JutarnjiStihov/JutarnjiStihov-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,10 +433,12 @@
 		42357E02173AFA81009F2841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JutarnjiStihov/JutarnjiStihov-Prefix.pch";
 				INFOPLIST_FILE = "JutarnjiStihov/JutarnjiStihov-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -454,6 +496,7 @@
 				42357E02173AFA81009F2841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42357E03173AFA81009F2841 /* Build configuration list for PBXNativeTarget "JutarnjiStihovTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +505,7 @@
 				42357E05173AFA81009F2841 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

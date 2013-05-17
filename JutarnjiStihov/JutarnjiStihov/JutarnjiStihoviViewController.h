@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextReader.h"
 
 @interface JutarnjiStihoviViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextView *tekst;
+@property (weak, nonatomic) IBOutlet UINavigationBar *navBar;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *datum;
+@property (weak, nonatomic) IBOutlet UIDatePicker *datapicker;
+@property (weak, nonatomic) IBOutlet UIButton *dugmePromena;
+
+
+- (IBAction)izaberiDatum:(id)sender;
+- (IBAction)promeniTekst:(id)sender;
+- (IBAction)skloniKalendar:(id)sender;
+
+- (void)zoom:(UIPinchGestureRecognizer *)rec;
+- (void)pormeniNaDatum:(NSDate *)dat;
 
 @end
