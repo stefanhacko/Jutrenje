@@ -16,9 +16,6 @@
 		42357DD6173AFA81009F2841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42357DD4173AFA81009F2841 /* InfoPlist.strings */; };
 		42357DD8173AFA81009F2841 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42357DD7173AFA81009F2841 /* main.m */; };
 		42357DDC173AFA81009F2841 /* JutarnjiStihoviAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42357DDB173AFA81009F2841 /* JutarnjiStihoviAppDelegate.m */; };
-		42357DDE173AFA81009F2841 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42357DDD173AFA81009F2841 /* Default.png */; };
-		42357DE0173AFA81009F2841 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42357DDF173AFA81009F2841 /* Default@2x.png */; };
-		42357DE2173AFA81009F2841 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42357DE1173AFA81009F2841 /* Default-568h@2x.png */; };
 		42357DE5173AFA81009F2841 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42357DE3173AFA81009F2841 /* MainStoryboard.storyboard */; };
 		42357DE8173AFA81009F2841 /* JutarnjiStihoviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42357DE7173AFA81009F2841 /* JutarnjiStihoviViewController.m */; };
 		42357DF0173AFA81009F2841 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DEF173AFA81009F2841 /* SenTestingKit.framework */; };
@@ -31,6 +28,13 @@
 		42B13528173C0D08001138F1 /* TextReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B13527173C0D08001138F1 /* TextReader.m */; };
 		42B1352A173C1247001138F1 /* Januar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B13529173C1247001138F1 /* Januar.txt */; };
 		42B1352C173C1B17001138F1 /* Februar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42B1352B173C1B17001138F1 /* Februar.txt */; };
+		42C0079F17A2A2BF002CFC62 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C0079D17A2A2BF002CFC62 /* Icon.png */; };
+		42C007A017A2A2BF002CFC62 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C0079E17A2A2BF002CFC62 /* Icon@2x.png */; };
+		42C007A617A2A506002CFC62 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C007A517A2A506002CFC62 /* Icon-Small@2x.png */; };
+		42C007A817A2A59F002CFC62 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C007A717A2A59F002CFC62 /* Icon-Small.png */; };
+		42C007AC17A2A6BC002CFC62 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C007A917A2A6BC002CFC62 /* Default-568h@2x.png */; };
+		42C007AD17A2A6BC002CFC62 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C007AA17A2A6BC002CFC62 /* Default.png */; };
+		42C007AE17A2A6BC002CFC62 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C007AB17A2A6BC002CFC62 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +61,6 @@
 		42357DD9173AFA81009F2841 /* JutarnjiStihov-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JutarnjiStihov-Prefix.pch"; sourceTree = "<group>"; };
 		42357DDA173AFA81009F2841 /* JutarnjiStihoviAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JutarnjiStihoviAppDelegate.h; sourceTree = "<group>"; };
 		42357DDB173AFA81009F2841 /* JutarnjiStihoviAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JutarnjiStihoviAppDelegate.m; sourceTree = "<group>"; };
-		42357DDD173AFA81009F2841 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		42357DDF173AFA81009F2841 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		42357DE1173AFA81009F2841 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		42357DE4173AFA81009F2841 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		42357DE6173AFA81009F2841 /* JutarnjiStihoviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JutarnjiStihoviViewController.h; sourceTree = "<group>"; };
 		42357DE7173AFA81009F2841 /* JutarnjiStihoviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JutarnjiStihoviViewController.m; sourceTree = "<group>"; };
@@ -75,6 +76,13 @@
 		42B13527173C0D08001138F1 /* TextReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextReader.m; sourceTree = "<group>"; };
 		42B13529173C1247001138F1 /* Januar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Januar.txt; path = ../Januar.txt; sourceTree = "<group>"; };
 		42B1352B173C1B17001138F1 /* Februar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Februar.txt; sourceTree = "<group>"; };
+		42C0079D17A2A2BF002CFC62 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		42C0079E17A2A2BF002CFC62 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		42C007A517A2A506002CFC62 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../Icon-Small@2x.png"; sourceTree = "<group>"; };
+		42C007A717A2A59F002CFC62 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		42C007A917A2A6BC002CFC62 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		42C007AA17A2A6BC002CFC62 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		42C007AB17A2A6BC002CFC62 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,14 +157,12 @@
 		42357DD2173AFA81009F2841 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42C0079C17A2A2A4002CFC62 /* Slike */,
 				42B13523173C0CB8001138F1 /* Tekst */,
 				42357DD3173AFA81009F2841 /* JutarnjiStihov-Info.plist */,
 				42357DD4173AFA81009F2841 /* InfoPlist.strings */,
 				42357DD7173AFA81009F2841 /* main.m */,
 				42357DD9173AFA81009F2841 /* JutarnjiStihov-Prefix.pch */,
-				42357DDD173AFA81009F2841 /* Default.png */,
-				42357DDF173AFA81009F2841 /* Default@2x.png */,
-				42357DE1173AFA81009F2841 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,6 +198,20 @@
 				422F8E3A174E19E40081CEB7 /* Jul.txt */,
 			);
 			name = Tekst;
+			sourceTree = "<group>";
+		};
+		42C0079C17A2A2A4002CFC62 /* Slike */ = {
+			isa = PBXGroup;
+			children = (
+				42C007A917A2A6BC002CFC62 /* Default-568h@2x.png */,
+				42C007AA17A2A6BC002CFC62 /* Default.png */,
+				42C007AB17A2A6BC002CFC62 /* Default@2x.png */,
+				42C007A717A2A59F002CFC62 /* Icon-Small.png */,
+				42C007A517A2A506002CFC62 /* Icon-Small@2x.png */,
+				42C0079D17A2A2BF002CFC62 /* Icon.png */,
+				42C0079E17A2A2BF002CFC62 /* Icon@2x.png */,
+			);
+			name = Slike;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				42357DD6173AFA81009F2841 /* InfoPlist.strings in Resources */,
-				42357DDE173AFA81009F2841 /* Default.png in Resources */,
-				42357DE0173AFA81009F2841 /* Default@2x.png in Resources */,
-				42357DE2173AFA81009F2841 /* Default-568h@2x.png in Resources */,
 				42357DE5173AFA81009F2841 /* MainStoryboard.storyboard in Resources */,
 				42B1352A173C1247001138F1 /* Januar.txt in Resources */,
 				42B1352C173C1B17001138F1 /* Februar.txt in Resources */,
@@ -278,6 +295,13 @@
 				42ADEA7E173D671200075263 /* April.txt in Resources */,
 				4215E1A31742E8060047C2EF /* Jun.txt in Resources */,
 				422F8E3B174E19E40081CEB7 /* Jul.txt in Resources */,
+				42C0079F17A2A2BF002CFC62 /* Icon.png in Resources */,
+				42C007A017A2A2BF002CFC62 /* Icon@2x.png in Resources */,
+				42C007A617A2A506002CFC62 /* Icon-Small@2x.png in Resources */,
+				42C007A817A2A59F002CFC62 /* Icon-Small.png in Resources */,
+				42C007AC17A2A6BC002CFC62 /* Default-568h@2x.png in Resources */,
+				42C007AD17A2A6BC002CFC62 /* Default.png in Resources */,
+				42C007AE17A2A6BC002CFC62 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
