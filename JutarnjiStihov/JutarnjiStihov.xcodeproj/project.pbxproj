@@ -23,6 +23,8 @@
 		42357DF2173AFA81009F2841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42357DCD173AFA81009F2841 /* Foundation.framework */; };
 		42357DFA173AFA81009F2841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42357DF8173AFA81009F2841 /* InfoPlist.strings */; };
 		42357DFD173AFA81009F2841 /* JutarnjiStihovTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42357DFC173AFA81009F2841 /* JutarnjiStihovTests.m */; };
+		426DCB5017C4B8D200FB01F7 /* Avgust.txt in Resources */ = {isa = PBXBuildFile; fileRef = 426DCB4E17C4B8D200FB01F7 /* Avgust.txt */; };
+		426DCB5117C4B8D200FB01F7 /* Septembar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 426DCB4F17C4B8D200FB01F7 /* Septembar.txt */; };
 		42993ACA173CF0260003AB5B /* Maj.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42993AC9173CF0260003AB5B /* Maj.txt */; };
 		42ADEA7E173D671200075263 /* April.txt in Resources */ = {isa = PBXBuildFile; fileRef = 42ADEA7D173D671200075263 /* April.txt */; };
 		42B13528173C0D08001138F1 /* TextReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B13527173C0D08001138F1 /* TextReader.m */; };
@@ -71,6 +73,8 @@
 		42357DF9173AFA81009F2841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		42357DFB173AFA81009F2841 /* JutarnjiStihovTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JutarnjiStihovTests.h; sourceTree = "<group>"; };
 		42357DFC173AFA81009F2841 /* JutarnjiStihovTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JutarnjiStihovTests.m; sourceTree = "<group>"; };
+		426DCB4E17C4B8D200FB01F7 /* Avgust.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Avgust.txt; sourceTree = "<group>"; };
+		426DCB4F17C4B8D200FB01F7 /* Septembar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Septembar.txt; sourceTree = "<group>"; };
 		42993AC9173CF0260003AB5B /* Maj.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Maj.txt; sourceTree = "<group>"; };
 		42ADEA7D173D671200075263 /* April.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = April.txt; sourceTree = "<group>"; };
 		42B13526173C0D08001138F1 /* TextReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextReader.h; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				42993AC9173CF0260003AB5B /* Maj.txt */,
 				4215E1A21742E8060047C2EF /* Jun.txt */,
 				422F8E3A174E19E40081CEB7 /* Jul.txt */,
+				426DCB4E17C4B8D200FB01F7 /* Avgust.txt */,
+				426DCB4F17C4B8D200FB01F7 /* Septembar.txt */,
 			);
 			name = Tekst;
 			sourceTree = "<group>";
@@ -306,6 +312,8 @@
 				42C007AD17A2A6BC002CFC62 /* Default.png in Resources */,
 				42C007AE17A2A6BC002CFC62 /* Default@2x.png in Resources */,
 				42C007B017A2BEB3002CFC62 /* pozadina.jpg in Resources */,
+				426DCB5017C4B8D200FB01F7 /* Avgust.txt in Resources */,
+				426DCB5117C4B8D200FB01F7 /* Septembar.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -130,24 +130,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <resources>
         <image name="pozadina.jpg" width="640" height="1360"/>
     </resources>
-    <classes>
-        <class className="JutarnjiStihoviViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JutarnjiStihoviViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="izaberiDatum:"/>
-                <relationship kind="action" name="promeniTekst:"/>
-                <relationship kind="action" name="skloniKalendar:"/>
-                <relationship kind="outlet" name="datapicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="datum" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="dugmePromena" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
-                <relationship kind="outlet" name="tekst" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
